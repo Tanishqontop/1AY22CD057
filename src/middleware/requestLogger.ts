@@ -13,7 +13,7 @@ interface LogData {
 }
 
 const LOGGING_URL = 'http://20.244.56.144/evaluation-service/logs';
-const AUTH_TOKEN = process.env.EVAL_API_TOKEN || ''; // Set this in .env
+const AUTH_TOKEN = process.env.EVAL_API_TOKEN || ''; 
 
 export function requestLogger(): RequestHandler {
   return (req: Request, res: Response, next: NextFunction) => {
